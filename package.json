@@ -1,0 +1,20 @@
+{
+  "name": "class-validator-is-json-issue",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm",
+    "start": "nodemon -x node --no-warnings --experimental-specifier-resolution=node --loader ts-node/esm src/index.ts",
+    "start:prod": "node dist/index.esm.js",
+    "test": "npm run test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "tsup": "^6.5.0"
+  }
+}
